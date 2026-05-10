@@ -8,10 +8,10 @@
     "frontend"
   ],
   "scripts": {
-    "build": "tsc -b",
+    "build": "tsc -b && npm run build --workspace=frontend",
     "clean": "tsc -b --clean",
     "backend": "npm run start --workspace=backend",
-    "frontend": "npm run start --workspace=frontend"
+    "frontend": "npm run dev --workspace=frontend"
   },
   "devDependencies": {
     "@types/node": "^22.7.0",
