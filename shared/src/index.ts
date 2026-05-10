@@ -1,5 +1,5 @@
 export function greet(name: string): string {
-  return `Hello, ${name}!`;
+  return `Hello, ${name}!`
 }
 
-export type GreetResponse = { message: string };
+export type GreetResponse = { message: string }

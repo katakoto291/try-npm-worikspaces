@@ -1,21 +1,21 @@
-import { defineWorkspace } from "vitest/config";
+import { defineWorkspace } from 'vitest/config'
 
 export default defineWorkspace([
   {
     test: {
-      name: "shared",
-      root: "./shared",
-      environment: "node",
-      include: ["src/**/*.test.ts"]
-    }
+      name: 'shared',
+      root: './shared',
+      environment: 'node',
+      include: ['src/**/*.test.ts'],
+    },
   },
   {
     test: {
-      name: "backend",
-      root: "./backend",
-      environment: "node",
-      include: ["src/**/*.test.ts"]
-    }
+      name: 'backend',
+      root: './backend',
+      environment: 'node',
+      include: ['src/**/*.test.ts'],
+    },
   },
-  "./frontend/vitest.config.ts"
-]);
+  './frontend/vitest.config.ts',
+])

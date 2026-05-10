@@ -14,9 +14,12 @@
     "backend": "npm run dev --workspace=backend",
     "frontend": "npm run dev --workspace=frontend",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write ."
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.4.13",
     "@types/node": "^22.7.0",
     "concurrently": "^9.0.0",
     "typescript": "^5.6.0",
