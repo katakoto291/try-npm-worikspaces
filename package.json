@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc -b && npm run build --workspace=frontend",
     "clean": "tsc -b --clean",
-    "backend": "npm run start --workspace=backend",
+    "backend": "npm run dev --workspace=backend",
     "frontend": "npm run dev --workspace=frontend"
   },
   "devDependencies": {

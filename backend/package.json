@@ -2,12 +2,18 @@
   "name": "@try/backend",
   "version": "1.0.0",
   "private": true,
-  "main": "dist/index.js",
+  "main": "dist/handler.js",
   "scripts": {
     "build": "tsc -b",
-    "start": "tsc -b && node dist/index.js"
+    "dev": "tsx watch src/server.ts",
+    "start": "tsc -b && node dist/server.js"
   },
   "dependencies": {
-    "@try/shared": "*"
+    "@hono/node-server": "^1.13.0",
+    "@try/shared": "*",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
   }
 }
