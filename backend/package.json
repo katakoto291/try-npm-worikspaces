@@ -2,9 +2,10 @@
   "name": "@try/backend",
   "version": "1.0.0",
   "private": true,
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "build": "tsc -b",
+    "start": "tsc -b && node dist/index.js"
   },
   "dependencies": {
     "@try/shared": "*"
