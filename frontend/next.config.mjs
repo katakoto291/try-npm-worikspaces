@@ -3,4 +3,4 @@ const nextConfig = {
   transpilePackages: ['@try/shared'],
 }
 
-module.exports = nextConfig
+export default nextConfig

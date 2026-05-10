@@ -2,11 +2,13 @@
   "name": "@try/backend",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "main": "dist/handler.js",
   "scripts": {
-    "build": "tsc -b",
+    "build": "tsup",
+    "type-check": "tsc --noEmit",
     "dev": "NODE_OPTIONS='--conditions=development' tsx watch --include='src/**' --include='../shared/src/**' src/server.ts",
-    "start": "tsc -b && node dist/server.js"
+    "start": "tsup && node dist/server.js"
   },
   "dependencies": {
     "@hono/node-server": "2.0.0",
@@ -14,6 +16,7 @@
     "hono": "4.12.15"
   },
   "devDependencies": {
+    "tsup": "8.5.1",
     "tsx": "4.21.0"
   }
 }
