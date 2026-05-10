@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsup",
     "type-check": "tsc --noEmit",
-    "dev": "NODE_OPTIONS='--conditions=development' tsx watch --include='src/**' --include='../shared/src/**' src/server.ts",
+    "dev": "tsx watch --include='src/**' --include='../shared/src/**' src/server.ts",
     "start": "tsup && node dist/server.js"
   },
   "dependencies": {
